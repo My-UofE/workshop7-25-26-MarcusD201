@@ -51,6 +51,15 @@ return height;
     // Task 4. add code for method getVolume()
     // make use of superclass' getArea() method
 
+public double getVolume(){
+
+cylinder_area= this.getArea();
+
+cylinder_vol= cylinder_area * height;
+
+return cylinder_vol;
+
+}
  
     // Task 5. Override toString() method to describe itself
     // (output format should be in line with format: Cylinder[Circle[...],height=X.XX]
