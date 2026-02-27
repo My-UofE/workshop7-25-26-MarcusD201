@@ -5,9 +5,10 @@
 // Task 1a. Edit the definition to make Cylinder a subclass of Circle
 //         
 
-public class Cylinder {
+public class Cylinder extends Circle {
     
     // Task 1b. add additional private height attribute (double)
+private double height;
 
 
     // Task 2. add code to define the following four constructors
@@ -16,7 +17,9 @@ public class Cylinder {
     // 2-arg constructor (set height and radius to the given values)
     // 3-arg constructor (set height, radius, and color to the given values)
 
-
+public Cylinder(){
+    height=1.0;
+}
     
     // Task 3. add getter and setter for height
     // (methods for radius and color are inherited)
