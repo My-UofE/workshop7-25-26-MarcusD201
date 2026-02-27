@@ -20,11 +20,34 @@ private double height;
 public Cylinder(){
     height=1.0;
 }
+
+public Cylinder(double newheight){
+    height= newheight;
+}
+
+public Cylinder(double newheight, double newradius){
+    height=newheight;
+    radius= newradius;
+}
+
+public Cylinder(double newheight, double newradius, String newColour){
+    height=newheight;
+    radius= newradius;
+    color=newColour;
+}
     
     // Task 3. add getter and setter for height
     // (methods for radius and color are inherited)
 
+public void setHeight(int newHeight){
+    height=newHeight;
+}
 
+public double getHeight(){
+
+return height;
+
+}
     // Task 4. add code for method getVolume()
     // make use of superclass' getArea() method
 
