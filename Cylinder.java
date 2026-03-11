@@ -69,8 +69,8 @@ return cylinder_vol;
     }
      @Override
    public double getArea() {
-   double baseArea = Math.PI *radius*radius;
-   double circ = 2 * Math.PI*radius;
+   double baseArea = Math.PI *this.getRadius()*this.getRadius();
+   double circ = 2 * Math.PI*this.getRadius();
    double readOut= (2*baseArea)+(circ*height);
 return readOut;
 
