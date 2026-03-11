@@ -65,6 +65,6 @@ return cylinder_vol;
     // (output format should be in line with format: Cylinder[Circle[...],height=X.XX]
 
     public String toString() {
-        String readOut = (Circle.toString+",height"+this.getHeight);
+        return String.format("Cylinder[Circle[radius=%.2f,color=%s],height=%f]", radius, color,height);
     }
  }
