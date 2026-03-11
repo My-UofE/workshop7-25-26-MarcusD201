@@ -67,4 +67,12 @@ return cylinder_vol;
     public String toString() {
         return String.format("Cylinder[Circle[radius=%.2f,color=%s],height=%f]",this.getRadius(),this.getColor(),height);
     }
+     @Override
+   public double getArea() {
+   double baseArea = Math.PI *radius*radius;
+   double circ = 2 * Math.PI*radius;
+   double readOut= (2*baseArea)+(circ*height);
+return readOut;
+
+   }
  }
