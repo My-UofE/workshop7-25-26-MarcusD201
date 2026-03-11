@@ -27,13 +27,13 @@ public Cylinder(double newheight){
 
 public Cylinder(double newheight, double newradius){
     height=newheight;
-    radius= newradius;
+    this.setRadius(newradius);
 }
 
 public Cylinder(double newheight, double newradius, String newColour){
     height=newheight;
-    radius= newradius;
-    color=newColour;
+    this.setRadius(newradius);
+    this.setColor(newColour);
 }
     
     // Task 3. add getter and setter for height
@@ -53,9 +53,9 @@ return height;
 
 public double getVolume(){
 
-cylinder_area= this.getArea();
+double cylinder_area= this.getArea();
 
-cylinder_vol= cylinder_area * height;
+double cylinder_vol= cylinder_area * height;
 
 return cylinder_vol;
 
@@ -65,6 +65,6 @@ return cylinder_vol;
     // (output format should be in line with format: Cylinder[Circle[...],height=X.XX]
 
     public String toString() {
-        return String.format("Cylinder[Circle[radius=%.2f,color=%s],height=%f]", radius, color,height);
+        return String.format("Cylinder[Circle[radius=%.2f,color=%s],height=%f]",this.getRadius(),this.getColor(),height);
     }
  }
