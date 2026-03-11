@@ -75,4 +75,14 @@ return cylinder_vol;
 return readOut;
 
    }
+
+   // instance method
+public void printClassInfo(){
+  System.out.println("It is a Cylinder class");
+}
+
+// static method
+public static void printClassInfoStatic(){
+  System.out.println("It is a Cylinder class");
+}
  }

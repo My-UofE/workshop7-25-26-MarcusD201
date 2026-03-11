@@ -3,12 +3,12 @@
  */
 public class TestCylinder2 {
     public static void main(String[] args) {
-       Cylinder cy2 = new Cylinder(5.0, 2.0);
+       Circle cy2 = new Cylinder(5.0, 2.0);
 
-       double h = cy2.getHeight();
        double r = cy2.getRadius();
        double a = cy2.getArea();
-       double v = cy2.getVolume();
+       double h = ((Cylinder)cy2).getHeight();
+       double v = ((Cylinder)cy2).getVolume();
 
        System.out.printf("Height: %.2f, Radius: %.2f, Area: %.2f, Volume: %.2f\n", h, r, a, v);
 
