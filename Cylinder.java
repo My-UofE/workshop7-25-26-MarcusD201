@@ -53,7 +53,7 @@ return height;
 
 public double getVolume(){
 
-double cylinder_area= this.getArea();
+double cylinder_area= super.getArea();
 
 double cylinder_vol= cylinder_area * height;
 
